@@ -11,6 +11,7 @@
 
 |Build|Cppcheck|Codacy|
 |:--:|:--:|:--:|
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d72fdeef4ab4fc4b1e140e919f12529)](https://app.codacy.com/gh/KaaviyaP/EmbeddedC_255944?utm_source=github.com&utm_medium=referral&utm_content=KaaviyaP/EmbeddedC_255944&utm_campaign=Badge_Grade_Settings)
 |[![Compile-Linux](https://github.com/KaaviyaP/EmbeddedC_255944/actions/workflows/Compile.yml/badge.svg)](https://github.com/KaaviyaP/EmbeddedC_255944/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/KaaviyaP/EmbeddedC_255944/actions/workflows/CodeQulaity.yml/badge.svg)](https://github.com/KaaviyaP/EmbeddedC_255944/actions/workflows/CodeQulaity.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e266b3e9afb5440aa83ddbeb4ac95dbe)](https://www.codacy.com/gh/KaaviyaP/EmbeddedC_255944/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KaaviyaP/EmbeddedC_255944&amp;utm_campaign=Badge_Grade)|
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e266b3e9afb5440aa83ddbeb4ac95dbe)](https://www.codacy.com/gh/KaaviyaP/EmbeddedC_255944/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KaaviyaP/EmbeddedC_255944&amp;utm_campaign=Badge_Grade)
