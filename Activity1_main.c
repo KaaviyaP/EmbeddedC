@@ -47,7 +47,7 @@ int main(void)
     while(1){
         if(!(PIND&(1<<BUTTONSENSOR)) && !(PIND&(1<<TEMPSENSOR))) //both the switches are pressed
         {
-            change_led_state(LED_ON);//LED ON
+            change_led_state(LED_ON);   //LED ON
 		    delay_ms(LED_ON_TIME); 
 
         }
