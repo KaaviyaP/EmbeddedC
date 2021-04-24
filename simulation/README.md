@@ -7,43 +7,32 @@
 
 ## Activity 1 Code 
 ```
-	#include <avr/io.h>
-#include <util/delay.h>
-
-int main(void)
-{
-
-    DDRB |= (1<<PB0); // set PB0=1 for LED
-    DDRD &= ~(1<<PD0); //clear bit
-    PORTD |= (1<<PD0); //set bit PD0 for SeatSwitch
-    DDRD &= ~(1<<PD1); //clear bit
-    PORTD |= (1<<PD1); //set bit PD0 for HeaterSwitch
-
- while(1){
-        if(!(PIND&(1<<PD0)) && !(PIND&(1<<PD1))) //both the switches are pressed
+	
+  while(1){
+        if(!(PIND&(1<<BUTTONSENSOR)) && !(PIND&(1<<TEMPSENSOR))) //both the switches are pressed
         {
-            PORTB |= (1<<PB0); //LED ON
+            change_led_state(LED_ON);//LED ON
+		    delay_ms(LED_ON_TIME); 
 
         }
-        else if(!(PIND&(1<<PD0)) && (PIND&(1<<PD1))) //SeatSwitch is pressed but HeaterSwitch is not pressed
+        else if(!(PIND&(1<<BUTTONSENSOR)) && (PIND&(1<<TEMPSENSOR))) //ButtonSwitch is pressed but HeaterSwitch is not pressed
         {
-            PORTB &= ~(1<<PB0); //LED OFF
+            change_led_state(LED_OFF);
+		    delay_ms(LED_OFF_TIME);	 //LED OFF
 
         }
-        else if((PIND&(1<<PD0)) && !(PIND&(1<<PD1)))//HeaterSwitch is pressed but SeatSwitch is not pressed
+        else if((PIND&(1<<BUTTONSENSOR)) && !(PIND&(1<<TEMPSENSOR)))//HeaterSwitch is pressed but ButtonSwitch is not pressed
         {
-            PORTB &= ~(1<<PB0); //LED OFF
+            change_led_state(LED_OFF);
+		    delay_ms(LED_OFF_TIME);	 //LED OFF
 
         }
-        else if((PIND&(1<<PD0)) && (PIND&(1<<PD1)))// both switches are not pressed
+        else if((PIND&(1<<BUTTONSENSOR)) && (PIND&(1<<TEMPSENSOR)))// both switches are not pressed
         {
-            PORTB &= ~(1<<PB0); //LED OFF
+            change_led_state(LED_OFF);
+		    delay_ms(LED_OFF_TIME);	 //LED OFF
 
         }
-
-}
-
-    return 0;
-}
+    }
 
 ```

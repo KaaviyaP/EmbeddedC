@@ -1,4 +1,4 @@
-DOXY_FILE = Blinky
+DOXY_FILE = Doxyfile
 doc:
 	doxygen ./$(DOXY_FILE)
 
