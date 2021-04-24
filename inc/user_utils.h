@@ -2,10 +2,10 @@
 #define __USER_UTILS_H__
 /**
  * @file user_utils.h
- * @author Bharath.G ()
+ * @author KaaviyaP (kaaviya2881999@gmail.com)
  * @brief User defined utilities used across the project
  * @version 0.1
- * @date 2021-04-23
+ * @date 2021-04-24
  * 
  * @copyright Copyright (c) 2021
  * 

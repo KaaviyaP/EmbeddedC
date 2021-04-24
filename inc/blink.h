@@ -1,11 +1,11 @@
-#ifndef __BLINKY_H_
-#define __BLINKY_H_
+#ifndef __BLINK_H_
+#define __BLINK_H_
 /**
- * @file blinky.h
- * @author Bharath.G ()
- * @brief Project to Blink an LED connected to AVR328 MCU GPIO Pin
+ * @file blink.h
+ * @author KaaviyaP (kaaviya2881999@gmail.com)
+ * @brief Utility to Blink an LED ON/OFF
  * @version 0.1
- * @date 2021-04-21
+ * @date 2021-04-23
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -17,8 +17,8 @@
 #define LED_ON 	(0x01)			/**< LED state HIGH */
 #define LED_OFF	(0x00)			/**< LED state LOW */
 
-#define LED_ON_TIME     (1000)  /**< LED ON time in milli seconds  */
-#define LED_OFF_TIME    (500)   /**< LED OFF time in milli seconds */
+#define LED_ON_TIME     (200)  /**< LED ON time in milli seconds  */
+#define LED_OFF_TIME    (200)   /**< LED OFF time in milli seconds */
 
 /**
  * Include files
@@ -37,4 +37,4 @@
 void change_led_state(uint8_t state);
 
 
-#endif /** __BLINKY_H_ */
+#endif /** __BLINK_H_ */
