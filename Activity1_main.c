@@ -45,25 +45,25 @@ int main(void)
 	peripheral_init();
     
     while(1){
-        if(!(PIND&(1<<BUTTONSENSOR)) && !(PIND&(1<<TEMPSENSOR))) //both the switches are pressed
+        if(!(PIND&(1<<BUTTON_SENSOR)) && !(PIND&(1<<TEMP_SENSOR))) //both the switches are pressed
         {
             change_led_state(LED_ON);   //LED ON
 		    delay_ms(LED_ON_TIME); 
 
         }
-        else if(!(PIND&(1<<BUTTONSENSOR)) && (PIND&(1<<TEMPSENSOR))) //ButtonSwitch is pressed but HeaterSwitch is not pressed
+        else if(!(PIND&(1<<BUTTON_SENSOR)) && (PIND&(1<<TEMP_SENSOR))) //ButtonSwitch is pressed but HeaterSwitch is not pressed
         {
             change_led_state(LED_OFF);
 		    delay_ms(LED_OFF_TIME);	 //LED OFF
 
         }
-        else if((PIND&(1<<BUTTONSENSOR)) && !(PIND&(1<<TEMPSENSOR)))//HeaterSwitch is pressed but ButtonSwitch is not pressed
+        else if((PIND&(1<<BUTTON_SENSOR)) && !(PIND&(1<<TEMP_SENSOR)))//HeaterSwitch is pressed but ButtonSwitch is not pressed
         {
             change_led_state(LED_OFF);
 		    delay_ms(LED_OFF_TIME);	 //LED OFF
 
         }
-        else if((PIND&(1<<BUTTONSENSOR)) && (PIND&(1<<TEMPSENSOR)))// both switches are not pressed
+        else if((PIND&(1<<BUTTON_SENSOR)) && (PIND&(1<<TEMP_SENSOR)))// both switches are not pressed
         {
             change_led_state(LED_OFF);
 		    delay_ms(LED_OFF_TIME);	 //LED OFF

@@ -20,8 +20,8 @@
 #define LED_PORT (PORTB)    /**< LED Port Number */
 #define LED_PIN  (PORTB0)   /**< LED Pin number  */
 #define SENSOR  (PORTD)   /**< Sensors */
-#define BUTTONSENSOR  (PORTD0)   /**< Port for Button Sensor  */
-#define TEMPSENSOR  (PORTD1)   /**< Port for Temperature Sensor   */
+#define BUTTON_SENSOR  (PORTD0)   /**< Port for Button Sensor  */
+#define TEMP_SENSOR  (PORTD1)   /**< Port for Temperature Sensor   */
 
 
 #endif /* __PROJECT_CONFIG_H__ */
