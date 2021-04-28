@@ -5,7 +5,7 @@
 
 |OFF|OFF|OFF|ON|
 |:--:|:--:|:--:|:--:|
-|![OFF](https://user-images.githubusercontent.com/80662569/115880845-cb579200-a468-11eb-8c5f-c0a4af578e13.PNG) |![OFF](https://user-images.githubusercontent.com/80662569/115880893-d5799080-a468-11eb-9b5c-994641382343.PNG)|![OFF](https://user-images.githubusercontent.com/80662569/115880899-d6aabd80-a468-11eb-96f0-ede2b16d1dfb.PNG)|![ON](https://user-images.githubusercontent.com/80662569/115880895-d6122700-a468-11eb-9f96-7bf86424943e.PNG)|
+|![OFF](https://user-images.githubusercontent.com/80662569/116460814-1e747f00-a885-11eb-9361-7d70ba90e82d.PNG) |![OFF](https://user-images.githubusercontent.com/80662569/116460808-1c122500-a885-11eb-8023-4ab0ec876fa6.PNG)|![OFF](https://user-images.githubusercontent.com/80662569/116460810-1ddbe880-a885-11eb-9460-5a43f89de00e.PNG)|![ON](https://user-images.githubusercontent.com/80662569/116460813-1ddbe880-a885-11eb-90f1-d0da5705cd19.PNG)|
 
 ### CI and Code Quality
 
