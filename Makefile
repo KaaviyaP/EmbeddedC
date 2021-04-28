@@ -6,6 +6,7 @@ BUILD_DIR = Build
 SRC = SeatHeatingApp.c\
 src/activity1.c\
 src/activity2.c\
+src/activity3.c\
 
 
 #Object copy to create hexfile

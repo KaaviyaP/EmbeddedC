@@ -11,6 +11,7 @@
 
 #include "activity1.h"
 #include "activity2.h"
+#include "activity3.h"
 
 int main(void)
 {
@@ -21,15 +22,16 @@ int main(void)
         {
            
             LED_PORT |= (1<<LED_PIN); //LED ON
-            activity2();
-		    delay_ms(LED_ON_TIME); 
+            uint16_t temp=activity2(); //Get the ADC value
+            activity3(temp); // PWM output based on temperature
+		    
+            
 
         }
         else  //in all other cases
         {
             LED_PORT &= ~(1<<LED_PIN); //LED OFF
-		    delay_ms(LED_OFF_TIME);	 
-
+		    _delay_ms(200);
         }
 
     }
