@@ -15,6 +15,7 @@
 
 int main(void)
 {
+    uint16_t temp;
     
     while(1)
     {
@@ -22,7 +23,7 @@ int main(void)
         {
            
             LED_PORT |= (1<<LED_PIN); //LED ON
-            uint16_t temp=activity2(); //Get the ADC value
+            temp=activity2(); //Get the ADC value
             activity3(temp); // PWM output based on temperature
 		    
             
