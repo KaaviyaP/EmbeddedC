@@ -1,7 +1,7 @@
 /**
  * @file SeatHeatingApp.c
  * @author KaaviyaP
- * @brief Activity 1 to Turn ON LED if switches for Button sensor and Heator sensor are pressed 
+ * @brief Heat Seating Application to set Temperature of seat
  * @version 0.1
  * @date 2021-04-23
  * 
@@ -14,7 +14,23 @@
 
 int main(void)
 {
-    activity1();
+    
+    while(1)
+    {
+        if(activity1()==1) //both the switches are pressed
+        {
+           
+            LED_PORT |= (1<<LED_PIN); //LED ON
+		    delay_ms(LED_ON_TIME); 
 
+        }
+        else  //in all other cases
+        {
+            LED_PORT &= ~(1<<LED_PIN); //LED OFF
+		    delay_ms(LED_OFF_TIME);	 
+
+        }
+
+    }
     return 0;
 }

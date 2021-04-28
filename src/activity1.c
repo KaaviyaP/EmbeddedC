@@ -26,26 +26,18 @@ void change_led_state(uint8_t state)
 	LED_PORT = (state << LED_PIN);
 }
 
+int act1=0;
 int activity1(void)
 {
-    /* Initialize Peripherals */
-	peripheral_init();
-    
-    while(1){
-       
+        /* Initialize Peripherals */
+       peripheral_init();
         if(!(PIND&(1<<BUTTON_SENSOR )) && !(PIND&(1<<TEMP_SENSOR))) //both the switches are pressed
-        {
-            LED_PORT |= (1<<LED_PIN); //LED ON
-		    delay_ms(LED_ON_TIME); 
-
+        { 
+            act1=1;
         }
         else  //in all other cases
         {
-            LED_PORT &= ~(1<<LED_PIN); //LED OFF
-		    delay_ms(LED_OFF_TIME);	 
-
+            act1=0;
         }
-
-    }
-    return 0;
+    return act1;
 }
