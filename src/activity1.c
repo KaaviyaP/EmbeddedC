@@ -37,19 +37,7 @@ int activity1(void)
 		    delay_ms(LED_ON_TIME); 
 
         }
-        else if(!(PIND&(1<<BUTTON_SENSOR)) && (PIND&(1<<TEMP_SENSOR))) //ButtonSwitch is pressed but HeaterSwitch is not pressed
-        {
-            change_led_state(LED_OFF);
-		    delay_ms(LED_OFF_TIME);	 //LED OFF
-
-        }
-        else if((PIND&(1<<BUTTON_SENSOR)) && !(PIND&(1<<TEMP_SENSOR)))//HeaterSwitch is pressed but ButtonSwitch is not pressed
-        {
-            change_led_state(LED_OFF);
-		    delay_ms(LED_OFF_TIME);	 //LED OFF
-
-        }
-        else if((PIND&(1<<BUTTON_SENSOR)) && (PIND&(1<<TEMP_SENSOR)))// both switches are not pressed
+        else () //in all other cases
         {
             change_led_state(LED_OFF);
 		    delay_ms(LED_OFF_TIME);	 //LED OFF
