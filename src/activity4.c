@@ -23,36 +23,60 @@ int USARTRead()
 
 void USARTWrite(uint16_t temp)
 {
-    int data;
-
+    unsigned char data1[]="Temperature: 20 degree C\n";
+    unsigned char data2[]="Temperature: 25 degree C\n";
+    unsigned char data3[]="Temperature: 29 degree C\n";
+    unsigned char data4[]="Temperature: 33 degree C\n";
+    unsigned char data5[]="Temperature: 0 degree C\n";
+    int i=0;
     if(temp>=0 && temp<=200){
-            data=20;
+           
+            i=0;
+            while(data1[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
-            UDR0 = data;        // Put data into buffer, sends the data
+            UDR0 = data1[i];        // Put data into buffer, sends the data
+            i++;
+            }
             _delay_ms(2000);
         }
         else if(temp>=210 && temp<=500){
-            data=25;
+           
+            i=0;
+            while(data2[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
-            UDR0 = data;        // Put data into buffer, sends the data
+            UDR0 = data2[i];        // Put data into buffer, sends the data
+            i++;
+            }
             _delay_ms(2000);
         }
         else if(temp>=510 && temp<=700){
-            data=29;
+            
+            i=0;
+            while(data3[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
-            UDR0 = data;        // Put data into buffer, sends the data
+            UDR0 = data3[i];        // Put data into buffer, sends the data
+            i++;
+            }
             _delay_ms(2000);
         }
         else if(temp>=710 && temp<=1024){
-             data=33;
-             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
-            UDR0 = data;        // Put data into buffer, sends the data
+           
+            i=0;
+            while(data4[i]!=0){
+            while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
+            UDR0 = data4[i];        // Put data into buffer, sends the data
+            i++;
+            }
             _delay_ms(2000);
         }
         else{
-            data=0;
+            
+            i=0;
+            while(data5[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
-            UDR0 = data;        // Put data into buffer, sends the data
+            UDR0 = data5[i];        // Put data into buffer, sends the data
+            i++;
+            }
             _delay_ms(2000);
             
         }
