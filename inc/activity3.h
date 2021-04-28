@@ -36,7 +36,7 @@
 void InitTimer();
 
 /**
- * @brief Produce duty cycle according to i/p temp
+ * @brief Produce duty cycle in PWM according to i/p ADC value
  * 
  * @param[in] temp The ADC value from activity2
  */

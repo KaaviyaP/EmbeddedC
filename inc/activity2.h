@@ -38,7 +38,7 @@ uint16_t ReadADC(uint8_t ch);
 /**
  * @brief Return the ADC value to main function
  * 
- * @return uint16_t 
+ * @return uint16_t The ADC value
  */
 uint16_t activity2_GetADC(void);
 

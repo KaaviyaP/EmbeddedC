@@ -23,7 +23,7 @@ int main(void)
         if(activity1_LED()==1) //Check if both the switches are pressed
         {
            
-            LED_PORT |= (1<<LED_PIN); //Turn LED ON
+            TurnLED_ON();//Turn LED ON
             temp=activity2_GetADC(); //Get the ADC value
             activity3_PWM(temp); //PWM output based on temperature
 		    activity4_USARTWrite(temp); //To Serial monitor to print Temperature
@@ -32,7 +32,7 @@ int main(void)
         }
         else  //in all other cases
         {
-            LED_PORT &= ~(1<<LED_PIN); //Turn LED OFF
+            TurnLED_OFF();//Turn LED OFF
 		    _delay_ms(200);
         }
 

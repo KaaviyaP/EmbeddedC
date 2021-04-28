@@ -37,14 +37,14 @@ void USARTInit();
 /**
  * @brief Reading data
  * 
- * @return int 
+ * @return int The read data
  */
 int USARTRead();
 
 /**
  * @brief Writing data to view in serial monitor
  * 
- * @param[in] temp 
+ * @param[in] temp The ADC value
  */
 void activity4_USARTWrite(uint16_t temp);
 

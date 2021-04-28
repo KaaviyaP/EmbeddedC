@@ -29,7 +29,7 @@ void activity3_PWM(uint16_t temp)
         }
         else{
             OCR1A=0;
-            
+            _delay_ms(200);
         }
 
 }
