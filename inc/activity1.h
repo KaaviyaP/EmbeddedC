@@ -41,7 +41,7 @@
 /**
  * @brief Change the state of the LED Pin according to the value of state
  * 
- * @param state Pin level to which the LED Pin should be set
+ * @param[in] state Pin level to which the LED Pin should be set
  */
 void change_led_state(uint8_t state);
 
@@ -63,6 +63,6 @@ void peripheral_init(void);
  * @brief Activity 1 to Turn ON LED if switches for Button sensor and Heator sensor are pressed 
  * 
  */
-int activity1(void);
+int activity1_LED(void);
 
 #endif /* __ACTIVITY_1_H__ */

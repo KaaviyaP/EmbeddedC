@@ -28,9 +28,9 @@
 void InitADC();
 
 /**
- * @brief Give the ADC values for the selected channel
+ * @brief Gives the ADC values for the selected channel
  * 
- * @param ch Channel number from 0-7
+ * @param[in] ch Channel number from 0-7
  * @return uint16_t ADC value
  */
 uint16_t ReadADC(uint8_t ch);
@@ -40,6 +40,6 @@ uint16_t ReadADC(uint8_t ch);
  * 
  * @return uint16_t 
  */
-uint16_t activity2(void);
+uint16_t activity2_GetADC(void);
 
 #endif /* __ACTIVITY_2_H__ */

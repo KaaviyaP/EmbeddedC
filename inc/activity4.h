@@ -5,7 +5,7 @@
  * @author KaaviyaP (kaaviya2881999@gmail.com)
  * @brief Functions to print the Temperature in Oscilloscope in activity4
  * @version 0.1
- * @date 2021-04-27
+ * @date 2021-04-28
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -44,8 +44,8 @@ int USARTRead();
 /**
  * @brief Writing data to view in serial monitor
  * 
- * @param temp 
+ * @param[in] temp 
  */
-void USARTWrite(uint16_t temp);
+void activity4_USARTWrite(uint16_t temp);
 
 #endif /* __ACTIVITY_4_H__ */

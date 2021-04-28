@@ -20,19 +20,19 @@ int main(void)
     
     while(1)
     {
-        if(activity1()==1) //Both the switches are pressed
+        if(activity1_LED()==1) //Check if both the switches are pressed
         {
            
-            LED_PORT |= (1<<LED_PIN); //LED ON
-            temp=activity2(); //Get the ADC value
-            activity3(temp); //PWM output based on temperature
-		    USARTWrite(temp); //To Serial monitor to print Temperature
+            LED_PORT |= (1<<LED_PIN); //Turn LED ON
+            temp=activity2_GetADC(); //Get the ADC value
+            activity3_PWM(temp); //PWM output based on temperature
+		    activity4_USARTWrite(temp); //To Serial monitor to print Temperature
             
 
         }
         else  //in all other cases
         {
-            LED_PORT &= ~(1<<LED_PIN); //LED OFF
+            LED_PORT &= ~(1<<LED_PIN); //Turn LED OFF
 		    _delay_ms(200);
         }
 

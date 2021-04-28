@@ -27,7 +27,7 @@ void change_led_state(uint8_t state)
 }
 
 int act1=0;
-int activity1(void)
+int activity1_LED(void)
 {
         /* Initialize Peripherals */
        peripheral_init();

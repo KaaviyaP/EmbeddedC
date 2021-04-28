@@ -3,9 +3,9 @@
 /**
  * @file activity3.h
  * @author KaaviyaP (kaaviya2881999@gmail.com)
- * @brief Functions to get the Temperature values and output PWM in activity3
+ * @brief Functions to convert the ADC value to corresponding PWM in activity3
  * @version 0.1
- * @date 2021-04-27
+ * @date 2021-04-28
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -38,8 +38,8 @@ void InitTimer();
 /**
  * @brief Produce duty cycle according to i/p temp
  * 
- * @param temp 
+ * @param[in] temp The ADC value from activity2
  */
-void activity3(uint16_t temp);
+void activity3_PWM(uint16_t temp);
 
 #endif /* __ACTIVITY_3_H__ */
