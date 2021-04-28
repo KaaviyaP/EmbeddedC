@@ -1,4 +1,4 @@
-PROJ_NAME = Activity1
+PROJ_NAME = SeatHeatApp
 
 BUILD_DIR = Build
 
@@ -7,6 +7,7 @@ SRC = SeatHeatingApp.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
+src/activity4.c\
 
 
 #Object copy to create hexfile
