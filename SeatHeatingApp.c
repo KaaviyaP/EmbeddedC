@@ -10,7 +10,7 @@
  */
 
 #include "activity1.h"
-
+#include "activity2.h"
 
 int main(void)
 {
@@ -21,6 +21,7 @@ int main(void)
         {
            
             LED_PORT |= (1<<LED_PIN); //LED ON
+            activity2();
 		    delay_ms(LED_ON_TIME); 
 
         }
