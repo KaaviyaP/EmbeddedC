@@ -3,7 +3,7 @@
 /**
  * @file activity4.h
  * @author KaaviyaP (kaaviya2881999@gmail.com)
- * @brief Functions to print the Temperature in Oscilloscope in activity4
+ * @brief Header file for activity4
  * @version 0.1
  * @date 2021-04-28
  * 
@@ -14,9 +14,9 @@
 /**
  * Macro Definitions
  */
-#define F_CPU 16000000UL
-#define USART_BAUDRATE 9600
-#define UBRR_VALUE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
+#define F_CPU 16000000UL /**< Clock Frequency of MCU is 16 MHz */
+#define USART_BAUDRATE 9600 /**< Baud rate for serial communication  */
+#define UBRR_VALUE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1) /**< Formula to calculate UBRR value */
 
 /**
  * Include files

@@ -1,3 +1,14 @@
+/**
+ * @file activity1.c
+ * @author KaaviyaP (kaaviya2881999@gmail.com)
+ * @brief User defined utilities, to define pins and ports to Blink an LED ON/OFF 
+ * @version 0.1
+ * @date 2021-04-27
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "activity1.h"
 
 

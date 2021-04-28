@@ -3,7 +3,7 @@
 /**
  * @file activity2.h
  * @author KaaviyaP (kaaviya2881999@gmail.com)
- * @brief Functions to get the ADC values in activity2
+ * @brief Header file for activity2
  * @version 0.1
  * @date 2021-04-27
  * 

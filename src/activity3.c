@@ -1,3 +1,14 @@
+/**
+ * @file activity3.c
+ * @author KaaviyaP (kaaviya2881999@gmail.com)
+ * @brief Functions to convert the ADC value to corresponding PWM 
+ * @version 0.1
+ * @date 2021-04-28
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "activity3.h"
 #include "activity2.h"
 

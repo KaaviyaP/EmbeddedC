@@ -3,7 +3,7 @@
 /**
  * @file activity3.h
  * @author KaaviyaP (kaaviya2881999@gmail.com)
- * @brief Functions to convert the ADC value to corresponding PWM in activity3
+ * @brief Header file for activity3
  * @version 0.1
  * @date 2021-04-28
  * 
@@ -14,10 +14,10 @@
 /**
  * Macro Definitions
  */
-#define PWM_20_PERCENT (205)
-#define PWM_40_PERCENT (410)
-#define PWM_70_PERCENT (717)
-#define PWM_95_PERCENT (973)
+#define PWM_20_PERCENT (205) /**< Output PWM for 20% duty cycle */
+#define PWM_40_PERCENT (410) /**< Output PWM for 40% duty cycle */
+#define PWM_70_PERCENT (717) /**< Output PWM for 70% duty cycle */
+#define PWM_95_PERCENT (973) /**< Output PWM for 95% duty cycle */
 
 /**
  * Include files
