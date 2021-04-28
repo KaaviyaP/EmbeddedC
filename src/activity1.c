@@ -12,11 +12,12 @@ void delay_ms(uint32_t delay_time)
 void peripheral_init(void)
 {
 	
-	DDRB |= (1<<PB0); // set PB0=1 and DDRB as ouput for LED
-    DDRD &= ~(1<<PD0); //set as input pin
-    PORTD |= (1<<PD0); //set bit PD0 for ButtonSwitch
-    DDRD &= ~(1<<PD1); //set as input pin
-    PORTD |= (1<<PD1); //set bit PD1 for HeaterSwitch
+	DDRD |= (1<<PD2); // set PB0=1 for LED
+    DDRD &= ~(1<<PD0); //clear bit
+    PORTD |= (1<<PD0); //set bit PD0 for SeatSwitch
+    DDRD &= ~(1<<PD1); //clear bit
+    PORTD |= (1<<PD1); //set bit PD0 for HeaterSwitch
+
 
 }
 
@@ -31,16 +32,17 @@ int activity1(void)
 	peripheral_init();
     
     while(1){
-        if(!(PIND&(1<<BUTTON_SENSOR)) && !(PIND&(1<<TEMP_SENSOR))) //both the switches are pressed
+       
+        if(!(PIND&(1<<BUTTON_SENSOR )) && !(PIND&(1<<TEMP_SENSOR))) //both the switches are pressed
         {
-            change_led_state(LED_ON);   //LED ON
+            LED_PORT |= (1<<LED_PIN); //LED ON
 		    delay_ms(LED_ON_TIME); 
 
         }
-        else () //in all other cases
+        else  //in all other cases
         {
-            change_led_state(LED_OFF);
-		    delay_ms(LED_OFF_TIME);	 //LED OFF
+            LED_PORT &= ~(1<<LED_PIN); //LED OFF
+		    delay_ms(LED_OFF_TIME);	 
 
         }
 
