@@ -1,4 +1,4 @@
-# Embedded C Programming 
+# Embedded C Programming - Seat Heating Application
 ## Activity-1 In Action
 
 |OFF|OFF|OFF|ON|
